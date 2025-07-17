@@ -27,8 +27,8 @@ jobs:
 
       - name: Retrieve Variable
         env:
-            MY_VAR: ${{ vars.MY_VAR }}
-        run: echo "MY_VAR is: $MY_VAR"
+          MY_VAR: ${{ vars.MY_VAR }}
+        run: "echo MY_VAR is: $MY_VAR"
 
       - name: Print Env Variables (step level override)
         env:
